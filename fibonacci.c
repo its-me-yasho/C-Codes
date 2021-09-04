@@ -3,7 +3,7 @@
 // FUN FOR FIBONACCI NUMBER SERIES
 void fibonacci(int n)
 {
-    float fib[100];
+    int fib[100];
     int i;
     fib[0] = 1; // ASSIGNING FIRST NUMBER
     fib[1] = 1; // ASSIGNING SECOND NUMBER
@@ -17,7 +17,7 @@ void fibonacci(int n)
     printf("\nfibonacci series is... ");
     for(i = 0; i < n; i++)
     {
-        printf("%f\t", fib[i]);
+        printf("%d\t", fib[i]);
     }
 
 }
