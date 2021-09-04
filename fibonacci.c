@@ -1,21 +1,22 @@
 #include<stdio.h>
 
+// FUN FOR FIBONACCI NUMBER SERIES
 void fibonacci(int n)
 {
     float fib[100];
     int i;
-    fib[0] = 1;
-    fib[1] = 1;
+    fib[0] = 1; // ASSIGNING FIRST NUMBER
+    fib[1] = 1; // ASSIGNING SECOND NUMBER
 
     for(i = 2; i < n; i++)
     {
         fib[i] = fib[i-1] + fib[i-2];
     }
 
+    //PRINTING FIBONACCI SERIES
     printf("\nfibonacci series is... ");
     for(i = 0; i < n; i++)
     {
-        
         printf("%f\t", fib[i]);
     }
 
@@ -23,15 +24,10 @@ void fibonacci(int n)
 
 void main()
 {
-    // int arr[100];
     int n;
+    
+    //TACKING LIMIT FROM USER
     printf("\nenter fibonacci limit: ");
     scanf("%d",&n);
     fibonacci(n);
-
-    // for(i = 0; i < n; i++)
-    // {
-    //     printf("enter element at position []");
-    //     scanf("%d", arr[i]);
-    // }
 }
